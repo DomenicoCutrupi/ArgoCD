@@ -11,10 +11,13 @@ spec:
   source:
     directory:
       recurse: false
-    path: esempio1/app
+    path: esempio1/app/
     repoURL: https://github.com/DomenicoCutrupi/argoCD-test.git
     targetRevision: main
   syncPolicy:
+    managedNamespaceMetadata:
+      labels:
+        argocd.argoproj.io/managed-by: openshift-gitops
     syncOptions:
     - CreateNamespace=true
     automated:
