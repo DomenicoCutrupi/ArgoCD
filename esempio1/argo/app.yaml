@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cineca-test-app
+  name: test-app
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: cineca-test
+    namespace: test
     server: https://kubernetes.default.svc
   project: default
   source:
