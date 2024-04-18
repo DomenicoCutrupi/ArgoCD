@@ -10,8 +10,8 @@ spec:
   project: default
   source:
     directory:
-      recurse: true
-    path: app
+      recurse: false
+    path: esempio1/app
     repoURL: https://github.com/DomenicoCutrupi/argoCD-test.git
     targetRevision: main
   syncPolicy:
